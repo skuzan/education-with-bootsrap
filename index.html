@@ -1,119 +1,633 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Education with bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/app.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/app.css" />
   </head>
-  <body class="body">
-
+  <body id="body">
     <!--NAVBAR-->
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/"><img src="/img/TEM_LOGO.png" alt="logo" class="nav-logo"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#student">Students</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#courses">Courses</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-      
-    </div>
-  </div>
-</nav>
-
-  <!--CAROUSEL-->
-
-  <div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/slider1.avif" class="d-block w-100" alt="slider-1">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Welcome to TEM Education</h5>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, exercitationem.</p>
-        <div>
-          <button class="btn btn-danger">Start Now</button>
-          <button class="btn btn-warning">Register</button>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img src="/img/TEM_LOGO.png" alt="logo" class="nav-logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#instructors">INSTRUCTORS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#student">Students</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/img/slider2.avif" class="d-block w-100" alt="slider-2">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, incidunt!</p>
-        <div>
-          <button class="btn btn-danger">Start Now</button>
-          <button class="btn btn-warning">Register</button>
+    </nav>
+
+    <!--CAROUSEL-->
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/slider1.avif" class="d-block w-100" alt="slider-1" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to TEM Education</h5>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus, exercitationem.
+            </p>
+            <div>
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/slider2.avif" class="d-block w-100" alt="slider-2" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Inventore, incidunt!
+            </p>
+            <div>
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/slider3.avif" class="d-block w-100" alt="slider-3" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptas, deleniti!
+            </p>
+            <div>
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
         </div>
       </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-item">
-      <img src="/img/slider3.avif" class="d-block w-100" alt="slider-3">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, deleniti!</p>
-        <div>
-          <button class="btn btn-danger">Start Now</button>
-          <button class="btn btn-warning">Register</button>
+
+    <main class="text-center">
+
+      <!--ABOOUT-->
+
+      <section id="about" class="container bg-light p-5">
+        <h2 class="display-6 text-warning mb-4">ABOUT US</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <i class="fa-solid fa-earth-americas fa-2x"></i>
+            <h4>Global Learning</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+              dicta?
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <i class="fa-solid fa-headset fa-2x"></i>
+            <h4>24/7 Support</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+              dicta?
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <i class="fa-solid fa-book-open-reader fa-2x"></i>
+            <h4>Learn at Your Own Pace</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+              dicta?
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-    
-    
+      </section>
 
+      <!--INSTRUCTORS-->
 
+      <section id="instructors" class="container bg-dark p-5">
+        <h2 class="display-6 text-warning mb-4">INSTRUCTORS</h2>
 
+        <div class="row justify-content-center g-1">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher1.avif" class="card-img-top" alt="t1" />
+              <div class="card-body">
+                <h5 class="card-title">Elif Yılmaz</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <div class="socials d-fex justify-content-around">
+                  <i class="fa-brands fa-facebook fa-2x"></i>
+                  <i class="fa-brands fa-square-instagram fa-2x"></i>
+                  <i class="fa-brands fa-x-twitter fa-2x"></i>
+                  <i class="fa-brands fa-linkedin fa-2x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher2.avif" class="card-img-top" alt="t1" />
+              <div class="card-body">
+                <h5 class="card-title">Hakan Uçum</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <div class="socials d-fex justify-content-around">
+                  <i class="fa-brands fa-facebook fa-2x"></i>
+                  <i class="fa-brands fa-square-instagram fa-2x"></i>
+                  <i class="fa-brands fa-x-twitter fa-2x"></i>
+                  <i class="fa-brands fa-linkedin fa-2x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher3.avif" class="card-img-top" alt="t1" />
+              <div class="card-body">
+                <h5 class="card-title">Merve Aktürk</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <div class="socials d-fex justify-content-around">
+                  <i class="fa-brands fa-facebook fa-2x"></i>
+                  <i class="fa-brands fa-square-instagram fa-2x"></i>
+                  <i class="fa-brands fa-x-twitter fa-2x"></i>
+                  <i class="fa-brands fa-linkedin fa-2x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher4.avif" class="card-img-top" alt="t1" />
+              <div class="card-body">
+                <h5 class="card-title">Burak Koç</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <div class="socials d-fex justify-content-around">
+                  <i class="fa-brands fa-facebook fa-2x"></i>
+                  <i class="fa-brands fa-square-instagram fa-2x"></i>
+                  <i class="fa-brands fa-x-twitter fa-2x"></i>
+                  <i class="fa-brands fa-linkedin fa-2x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher5.avif" class="card-img-top" alt="t1" />
+              <div class="card-body">
+                <h5 class="card-title">Hande Deniz</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <div class="socials d-fex justify-content-around">
+                  <i class="fa-brands fa-facebook fa-2x"></i>
+                  <i class="fa-brands fa-square-instagram fa-2x"></i>
+                  <i class="fa-brands fa-x-twitter fa-2x"></i>
+                  <i class="fa-brands fa-linkedin fa-2x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher6.avif" class="card-img-top" alt="t1" />
+              <div class="card-body">
+                <h5 class="card-title">Merve Başaran</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <div class="socials d-fex justify-content-around">
+                  <i class="fa-brands fa-facebook fa-2x"></i>
+                  <i class="fa-brands fa-square-instagram fa-2x"></i>
+                  <i class="fa-brands fa-x-twitter fa-2x"></i>
+                  <i class="fa-brands fa-linkedin fa-2x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!--STUDENTS-->
 
+      <section id="student" class="container bg-light p-5">
+        <h2 class="display-6 text-warning mb-4">OUR STUDENTS</h2>
 
+        <div class="row align-item-center flex-column-reverse flex-md-row">
+          <div class="col-md-6">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Exercitationem minima voluptas nam repellendus placeat velit
+              tempore aut eligendi aliquid earum quam numquam corrupti
+              perferendis blanditiis perspiciatis vitae, corporis excepturi
+              tempora! Officia dolorem accusantium sint est sunt debitis,
+              asperiores itaque veritatis maxime laudantium adipisci blanditiis
+              quis expedita quas assumenda dignissimos eveniet.
+            </p>
+            <button class="btn btn-warning">Learn More</button>
+          </div>
 
+          <div class="col-md-6">
+            <img src="./img/students1.png" alt="students" width="70%" />
+          </div>
+        </div>
+      </section>
 
+      <!--COURSES-->
 
+      <section id="courses" class="container bg-dark p-5">
+        <h2 class="display-6 text-warning mb-4">OUR COURSES</h2>
 
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#fs-images"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              Full Stack
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#cs-images"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              Cyber Security
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+            >
+              Automation
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="fs-images"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-sm-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/fs1.jpg">
+                  <img
+                    src="./img/thumbnail/fs1.jpg"
+                    class="img-thumbnail"
+                    alt="fs1"
+                /></a>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/fs2.jpg">
+                  <img
+                    src="./img/thumbnail/fs2.jpg"
+                    class="img-thumbnail"
+                    alt="fs2"
+                /></a>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/fs3.jpg">
+                  <img
+                    src="./img/thumbnail/fs3.jpg"
+                    class="img-thumbnail"
+                    alt="fs3"
+                /></a>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/fs4.jpg">
+                  <img
+                    src="./img/thumbnail/fs4.jpg"
+                    class="img-thumbnail"
+                    alt="fs4"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="cs-images"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-sm-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/cs1.jpg">
+                  <img
+                    src="./img/thumbnail/cs1.jpg"
+                    class="img-thumbnail"
+                    alt="cs1"
+                /></a>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/cs2.jpg">
+                  <img
+                    src="./img/thumbnail/cs2.jpg"
+                    class="img-thumbnail"
+                    alt="cs2"
+                /></a>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/cs3.jpg">
+                  <img
+                    src="./img/thumbnail/cs3.jpg"
+                    class="img-thumbnail"
+                    alt="cs3"
+                /></a>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/cs4.jpg">
+                  <img
+                    src="./img/thumbnail/cs4.jpg"
+                    class="img-thumbnail"
+                    alt="cs4"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-sm-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/ta1.jpg">
+                  <img
+                    src="./img/thumbnail/ta1.jpg"
+                    class="img-thumbnail"
+                    alt="ta1"
+                /></a>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/ta2.jpg">
+                  <img
+                    src="./img/thumbnail/ta2.jpg"
+                    class="img-thumbnail"
+                    alt="ta2"
+                /></a>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/ta3.jpg">
+                  <img
+                    src="./img/thumbnail/ta3.jpg"
+                    class="img-thumbnail"
+                    alt="ta3"
+                /></a>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/ta4.jpg">
+                  <img
+                    src="./img/thumbnail/ta4.jpg"
+                    class="img-thumbnail"
+                    alt="ta4"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!--CONTACT-->
 
+      <section
+        id="contact"
+        class="container bg-light justify-content-center p-5"
+      >
+        <h2 class="display-6 text-warning mb-4">CONTACT</h2>
 
+        <article id="form">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            saepe neque beatae voluptate, aut voluptas!
+          </p>
+          <div class="row p-5">
+            <div class="col-md-4 contact mt-3">
+              <i class="fa-solid fa-phone-volume fa-2x text-warning"></i>
+              <h4>Telephone</h4>
+              <a href="tel:+12345678">+12345678</a>
+            </div>
+            <div class="col-md-4 contact mt-3">
+              <i class="fa-brands fa-whatsapp fa-2x text-warning"></i>
+              <h4>Telephone</h4>
+              <a href="https://wa.me/+12345678">+12345678</a>
+            </div>
+            <div class="col-md-4 contact mt-3">
+              <i class="fa-regular fa-envelope fa-2x text-warning"></i>
+              <h4>Telephone</h4>
+              <a href="mailto:info@temeducation.com">info@temeducation.com</a>
+            </div>
+          </div>
 
+          <form class="row mt-4 g-1">
+            <div class="col-md-6 form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingText"
+                placeholder="Name"
+              />
+              <label for="floatingText">Name</label>
+            </div>
+            <div class="col-md-6 form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="col-12 form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingSubject"
+                placeholder="Subject"
+              />
+              <label for="floatingSubject">Subject</label>
+            </div>
+            <div class="col-12 form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea"
+              ></textarea>
+              <label for="floatingTextarea">Comments</label>
+            </div>
 
+            <div class="col-12 mt-3">
+              <button class="btn btn-warning">Submit</button>
+            </div>
+          </form>
+        </article>
 
+        <article class="mt-4" id="location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163720.23200220533!2d8.471412410346838!3d50.12131503075797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd096f477096c5%3A0x422435029b0c600!2sFrankfurt!5e0!3m2!1str!2sde!4v1755871342785!5m2!1str!2sde"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </article>
+      </section>
+    </main>
 
+    <!--FOOTER-->
 
+    <footer class="bg-dark text-center text-white p-4">
+      <article>
+        <a href="#"><i class="fa-brands fa-facebook fa-2x text-white"></i></a>
+        <a href="#"
+          ><i class="fa-brands fa-square-instagram fa-2x text-white"></i
+        ></a>
+        <a href="#"> <i class="fa-brands fa-x-twitter fa-2x text-white"></i></a>
+        <a href="#"> <i class="fa-brands fa-linkedin fa-2x text-white"></i></a>
+      </article>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+      <p class="p-4">
+        &copy 2025 Copyright by TEM Education. All rights reserved.
+      </p>
+    </footer>
+
+    <!--TOP BUTTON-->
+
+   <div class="fa-3x"></div> <a href="#body" class="btn-up">
+
+      <i class="fa-solid fa-arrow-up fa-beat" style="--fa-animation-duration: 0.8s;"></i>
+    </a></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--FSLIGHTBOX JS-->
+
+    <script src="./lib/fslightbox.js"></script>
   </body>
 </html>

@@ -24,10 +24,10 @@ color: var(--orange);
 /* CAROUSEL */
 
 .carousel-item {
-    max-height: calc(100vh-80px);
+    max-height: calc(100vh-100px);
 }
 
-.carousel-caption{
+.carousel-caption {
     background-color: rgb(239, 248, 255, 0.65);
     border-radius: 1rem;
     width: 60%;
@@ -39,9 +39,6 @@ color: var(--orange);
    
     color: var(--orange);
     font-size: 2rem;
-    /* background-color: rgb(239, 248, 255, 0.8); */
-    /* border-radius: 1rem; */
-    
     text-align: center;
     justify-content: center;
     font-weight: 700;
@@ -69,3 +66,85 @@ color: var(--orange);
 .carousel-caption{
     bottom: 5rem;
 }
+
+/* INSTRUCTORS */
+
+#instructors{
+    transition: all 0.4s;
+
+}
+
+#instructors .card:hover{
+    transform: scale(1.02);
+    box-shadow: 5px 5px 10px var(--orange),
+               -5px -5px 10px var(--orange);
+    
+}
+
+#instructors .socials i{
+    transition: all 0.4s;
+}
+
+#instructors .socials i:hover{
+    opacity: 0.5;
+}
+
+/* STUDENTS */
+
+#student img{
+    min-width: 200px;
+    max-width: 400px;
+}
+
+/* COURSES */
+
+#courses .nav-link.active{
+    background-color: var(--orange);
+}
+
+#courses .nav-link{
+    color: rgb(255, 255, 255);
+}
+
+/* CONTACT */
+
+.contact a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: all 0.5s;
+}
+
+.contact a:hover{
+    font-size: 1.2rem;
+}
+
+/* FOOTER */
+
+/* TOP BUTTON*/
+
+.btn-up{
+    position: fixed;
+    bottom: 2rem;
+    right: 1.2rem;
+    color: white;
+    background-color: var(--orange);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: all 0.5s ease;
+}
+
+.btn-up:hover{
+    color: black;
+    transform: translateY(-6px) scale(1,1);
+}
+
+
+
+
+
