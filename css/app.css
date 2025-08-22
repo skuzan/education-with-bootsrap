@@ -9,6 +9,9 @@
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .nav-link{
@@ -24,7 +27,7 @@ color: var(--orange);
 /* CAROUSEL */
 
 .carousel-item {
-    max-height: calc(100vh-100px);
+    max-height: calc(100vh - 80px);
 }
 
 .carousel-caption {
